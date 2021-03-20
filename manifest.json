@@ -3,19 +3,22 @@
     "name": "Cat Gifs!",
     "version": "1.0",
     "applications": {
-      "gecko": {
-        "id": "catgifs@mozilla.org"
-      }
+        "gecko": {
+            "id": "catgifs@mozilla.org"
+        }
     },
-  
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["content.js"]
+        }
+    ],
     "background": {
         "scripts": ["background.js"],
-        "persistent": false
-      },
-      
-      "permissions": ["tabs","windows"],
-
+        "persistent": true
+    },
+    "permissions": ["tabs", "windows"],
     "browser_action": {
-      "default_title": "Cat Gifs!"
+        "default_title": "Cat Gdifs!"
     }
-  }
+}

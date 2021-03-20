@@ -1,9 +1,4 @@
-
-/*global chrome:false */
-
-
-chrome.browserAction.setBadgeBackgroundColor({color: '#eae'});
-
-chrome.browserAction.onClicked.addListener(function(aTab) {
-  chrome.tabs.create({'url': 'http://chilloutandwatchsomecatgifs.com/', 'active': true});
-});
+browser.tabs.query({ currentWindow: true, active: true }).then((tabs) => {
+    let tab = tabs[0];
+    console.log(tab.url);
+}, console.error);
