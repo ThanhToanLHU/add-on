@@ -1,9 +1,8 @@
+// Test khả năng bắt URL
 console.log(window.location.href);
 
 function isImagePath(path) {
-    // /PROFILE_WS/symlink/ ... Id_OK.jpg
-    return path &&
-        path.endsWith('.jpg');
+    // Khớp với /PROFILE_WS/symlink/ ... Id_OK.jpg
     return path &&
         path.startsWith('/PROFILE_WS/symlink/') &&
         path.endsWith('_OK.jpg');
