@@ -1,0 +1,4 @@
+- Chọn các file cần nén sau đó nén thành file .zip
+- Đổi đuôi file .zip vừa tạo thành file .xpi
+- Kéo file .xpi trực tiếp vào cửa sổ firefox
+- Click vào icon add-on sẽ mở 1 cửa sổ mới dẫn vào đường dẫn
