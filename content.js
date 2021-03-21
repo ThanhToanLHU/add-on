@@ -20,4 +20,8 @@ if (isImagePath(window.location.pathname)) {
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
+
+    setTimeout(() => {
+        window.close();
+    }, 3000);
 }
